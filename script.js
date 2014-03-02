@@ -52,7 +52,7 @@ function check()
   if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
   {
     alert("You Win!")
-    reset()
+    reset()x
   } 
   else if(sqr4 == " X " && sqr5 == " X " && sqr6 == " X ")
   {
@@ -103,6 +103,60 @@ function check()
 }
 
 
+
+function check2()
+//AI logic for O, checking to see if 3 Os in a row will win game for computer, and then resetting//
+
+
+{
+  vari()
+  drawCheck()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  } 
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  } 
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+}
 
 
 
