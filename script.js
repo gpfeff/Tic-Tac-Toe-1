@@ -159,6 +159,17 @@ function check2()
 }
 
 
+function drawCheck()
+//Checks to see if a draw has occured by checking varMoveCount//
+{
+  vari()
+  moveCount = sqr1T + sqr2T + sqr3T + sqr4T + sqr5T + sqr6T + sqr7T + sqr8T + sqr9T 
+  if(moveCount == 9)
+  {
+    reset()
+    alert("Draw") 
+  }
+}
 
 
 
