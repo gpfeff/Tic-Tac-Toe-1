@@ -1,12 +1,15 @@
 <html>
   <head>
-    <title>Greg's Tic-Tac-Toe</title>    
+    <title>Tic-Tac-Toe</title>    
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
 
   <body>
+  <h1>*Unwinnable Tic-Tac-Toe</h1>
+  <h5>*Well, Almost, See Below</h5>
+
     <script>    
       var sqr1
       var sqr2
@@ -29,6 +32,7 @@
       var moveCount = 0
       var turn = 0
       var mode = 1
+      //Creates variables for each square & variables to keep track of number of moves, whos turn it is & if the square is occupied or not//
 
       function vari()
       {
@@ -42,6 +46,8 @@
       sqr8 = document.tic.sqr8.value
       sqr9 = document.tic.sqr9.value
       }
+
+
       function check()
       {
         if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
@@ -96,6 +102,8 @@
           drawCheck()  
         } 
       }
+      //Logic for all possibilites of Player 1 winning or if no win occurs, run functions winCheck, check2 and then check for draw//
+
 
       function check2()
       {
@@ -103,155 +111,51 @@
         drawCheck()
         if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         } 
         else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         } 
         else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
         else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
         else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
         else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
         else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
         else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
         else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
         {
-          alert("You Lose!")
+          alert("You Lose! Looks like you have to hire Greg...")
           reset()
         }
       }
 
-      function player1Check()
-      {
-        if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        } 
-        else if(sqr4 == " X " && sqr5 == " X " && sqr6 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        } 
-        else if(sqr7 == " X " && sqr8 == " X " && sqr9 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else if(sqr1 == " X " && sqr4 == " X " && sqr7 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else if(sqr2 == " X " && sqr5 == " X " && sqr8 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else if(sqr3 == " X " && sqr6 == " X " && sqr9 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else if(sqr3 == " X " && sqr5 == " X " && sqr7 == " X ")
-        {
-          alert("Player 1 wins!")
-          reset()
-        }
-        else
-        {
-          player2Check()
-          drawCheck()  
-        } 
-      }
-
-      function player2Check()
-      {
-        vari()
-        drawCheck()
-        if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        } 
-        else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        } 
-        else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-        else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-        else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-        else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-        else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-        else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-        else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
-        {
-          alert("Player 2 wins!")
-          reset()
-        }
-      }
 
       function drawCheck()
       {
